@@ -29,7 +29,7 @@ const AllProduct = () => {
 
     const satu : any = useRef()
     const dua : any = useRef()
-    const viewOne = useInView(satu, {margin:"-500px", once:true})
+    const viewOne = useInView(satu, {margin:"-300px", once:true})
     const viewTwo = useInView(dua, {margin:"-300px", once:true})
 
   return (

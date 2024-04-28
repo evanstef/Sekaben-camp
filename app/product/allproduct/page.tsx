@@ -15,7 +15,7 @@ import { product } from '@/app/_component/ProductImage'
 import detail from '../../../albumfoto/WhatsApp Image 2024-04-27 at 18.39.07_853bd94c.jpg'
 
 
-const page = () => {
+const AllProduct = () => {
     const settings = {
         dots: true,
         infinite: true,
@@ -53,7 +53,7 @@ const page = () => {
 
             <div ref={satu} className='grid md:grid-cols-2 lg:grid-cols-3 gap-20'>
                 {product.map((item, index) => (
-                  <motion.div initial={index % 2 === 0 ? {opacity: 0, y: 100} : {opacity: 0, y: -100}} animate={viewOne ? {opacity: 1, y: 0, transition : {duration : 0.7, delay : 0.3 * index}} : {}} className="mx-auto lg:w-[400px] bg-base-100 shadow-xl rounded-xl duration-300 ease-in-out">
+                  <motion.div key={index} initial={index % 2 === 0 ? {opacity: 0, y: 100} : {opacity: 0, y: -100}} animate={viewOne ? {opacity: 1, y: 0, transition : {duration : 0.7, delay : 0.3 * index}} : {}} className="mx-auto lg:w-[400px] bg-base-100 shadow-xl rounded-xl duration-300 ease-in-out">
                     <Image className='rounded-xl' src={item} alt="Shoes" />
                   </motion.div>
                 ))}
@@ -62,4 +62,4 @@ const page = () => {
   )
 }
 
-export default page
+export default AllProduct

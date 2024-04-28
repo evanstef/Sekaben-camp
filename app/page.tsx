@@ -46,7 +46,7 @@ export default function Home() {
                 />
               </div>
               
-              <motion.p initial={{opacity: 0, y: 50}} animate={ {opacity: 1, y: 0, transition : {duration : 0.7}}} className="text-[10px] lg:text-xl mb-2 md:mb-6">Kami menyediakan jasa penyewaan alat camping lengkap dan terpercaya berada di pusat kota PangkalPinang sehingga bagi kalian yang menyukai camping bisa menyewa alat camping di sekaben camp<i className="font-bold">"Kualitas Elit Harga Irit"</i></motion.p>
+              <motion.p initial={{opacity: 0, y: 50}} animate={ {opacity: 1, y: 0, transition : {duration : 0.7}}} className="text-[10px] lg:text-xl mb-2 md:mb-6">Kami menyediakan jasa penyewaan alat camping lengkap dan terpercaya berada di pusat kota PangkalPinang sehingga bagi kalian yang menyukai camping bisa menyewa alat camping di sekaben camp<i className="font-bold">&quot;Kualitas Elit Harga Irit&quot;</i></motion.p>
               <motion.div initial={{opacity: 0, y: -50}} animate={ {opacity: 1, y: 0, transition : {duration : 0.7}}}>
               <Link className="bg-green-600 text-[10px] w-[28%] md:w-[35%] lg:w-[16.5%] md:text-xl px-2 flex items-center gap-1 md:gap-3 md:px-5 py-1 rounded-lg lg:text-2xl hover:bg-green-800 duration-300 ease-in-out" href={"https://wa.me/6281368757969?text=Halo%20min,%20Saya%20Mau%20Sewa%20Alat%20Camping"} target="_blank">
                 <p>Contact Us</p>

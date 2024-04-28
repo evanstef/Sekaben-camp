@@ -11,7 +11,7 @@ import { useInView, motion } from 'framer-motion'
 import image from '../../albumfoto/WhatsApp Image 2024-04-28 at 09.26.36_290c29d3.jpg'
 
 
-const page = () => {
+const Contact = () => {
     const satu : any = useRef()
     const viewOne = useInView(satu, {margin:"-300px", once:true})
   return (
@@ -80,4 +80,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Contact

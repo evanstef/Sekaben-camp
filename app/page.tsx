@@ -20,10 +20,10 @@ import Head from "next/head";
 
 export default function Home() {
 
-  const viewSatu : any = useRef()
-  const viewDua : any = useRef()
-  const viewOne = useInView(viewSatu, {margin:"-500px", once:true})
-  const viewTwo = useInView(viewDua, {margin:"-600px", once:true})
+  const satu : any = useRef()
+  const dua : any = useRef()
+  const viewOne = useInView(satu, {margin:"-500px", once:true})
+  const viewTwo = useInView(dua, {margin:"-600px", once:true})
 
   
 
@@ -65,7 +65,7 @@ export default function Home() {
       
       <Wrapper>
         {/* Home Page */}
-        <div ref={viewSatu} className="flex flex-col md:flex-row justify-between items-center gap-10 mb-10 md:my-28">
+        <div ref={satu} className="flex flex-col md:flex-row justify-between items-center gap-10 mb-10 md:my-28">
           <motion.div initial={{opacity: 0, x: -100}} animate={viewOne ? {opacity: 1, x: 0,transition:{duration : 0.5}} : {}} className="w-full md:w-1/2">
             <h1 className="text-sm md:text-xl lg:text-3xl font-bold mb-4">Apa sih itu Sekaben Camp ?</h1>
             <p className="text-xs md:text-sm lg:text-[16px]">Sekaben Camp merupakan Bisnis / Badan Usaha yang melayani Jasa Penyewaan Peralatan Camping yang merupakan binaan Kampus Institut Sains dan Bisnis (ISB) Atma Luhur yang lahir pada bulan Agustus 2023, yang dikelola oleh Mahasiswa Wirausaha dari Institut Sains dan Bisnis Atma Luhur. Sekaben Camp mendapat support pendanaan dari Kemendikbud RI pada Program P2MW Tahun 2023.</p>
@@ -75,7 +75,7 @@ export default function Home() {
           </motion.div>
         </div>
 
-        <motion.div ref={viewDua} className="flex flex-col md:flex-row justify-between items-center gap-10 mb-28">
+        <div ref={dua} className="flex flex-col md:flex-row justify-between items-center gap-10 mb-28">
           <motion.div initial={{opacity: 0, y: -100}} animate={viewTwo ? {opacity: 1, y: 0,transition:{duration : 0.7}} : {}} className="w-full md:w-1/2">
             <div className="flex items-center gap-2">
               <motion.div initial={{scale : 0}} animate={viewTwo ? {scale : 1,transition:{duration : 0.3, delay: 0.5}} : {}} className="w-[40%]">
@@ -93,7 +93,7 @@ export default function Home() {
             <h1 className="text-sm font-bold md:text-xl lg:text-3xl mb-4">Alasan Kenapa Mendirikan Sekaben Camp ? </h1>
             <p className="text-xs md:text-sm lg:text-[16px]">Beberapa orang mungkin memiliki akses ke alat-alat camping yang tidak mereka gunakan secara teratur, seperti tenda, sleeping bag, dan peralatan memasak. Melihat potensi dari sumber daya yang dimiliki, kami memutuskan untuk memanfaatkannya dengan mendirikan usaha penyewaan alat camping. Dan juga lokasi Bangka Belitung yang terkenal dengan wisata alamnya seperti bukit,air terjun, pantai, dan lain sebagainya tempat-tempat yang cocok untuk berkemah seringkali menarik minat seseorang untuk melakukan kegiatan outdoor. Namun, tidak semua orang memiliki akses atau mampu membeli alat-alat camping secara pribadi. Dengan menyediakan jasa penyewaan alat camping, kami dapat memenuhi kebutuhan pasar yang ada di sekitar kami.</p>
           </motion.div>
-        </motion.div>
+        </div>
       </Wrapper>
     </>
   );

@@ -27,10 +27,10 @@ const page = () => {
         arrows: true,
     }
 
-    const view : any = useRef()
-    const viewDua : any = useRef()
-    const viewOne = useInView(view, {margin:"-500px", once:true})
-    const viewTwo = useInView(viewDua, {margin:"-300px", once:true})
+    const satu : any = useRef()
+    const dua : any = useRef()
+    const viewOne = useInView(satu, {margin:"-500px", once:true})
+    const viewTwo = useInView(dua, {margin:"-300px", once:true})
 
   return (
     <Wrapper>
@@ -43,7 +43,7 @@ const page = () => {
             ))}
         </Slider>
             <h1 className='text-center font-bold text-3xl my-10'>Detail Harga</h1>
-            <div ref={viewDua}>
+            <div ref={dua}>
               <motion.div initial={{scale:0}} animate={viewTwo ? {scale:1, transition : {duration : 0.3}} : {}}>
                 <Image className='w-[500px] rounded-xl mx-auto' src={detail} alt='' />
               </motion.div>
@@ -51,7 +51,7 @@ const page = () => {
             
             <h1 className='text-center font-bold text-3xl my-10'>Semua Produk</h1>
 
-            <div ref={view} className='grid md:grid-cols-2 lg:grid-cols-3 gap-20'>
+            <div ref={satu} className='grid md:grid-cols-2 lg:grid-cols-3 gap-20'>
                 {product.map((item, index) => (
                   <motion.div initial={index % 2 === 0 ? {opacity: 0, y: 100} : {opacity: 0, y: -100}} animate={viewOne ? {opacity: 1, y: 0, transition : {duration : 0.7, delay : 0.3 * index}} : {}} className="mx-auto lg:w-[400px] bg-base-100 shadow-xl rounded-xl duration-300 ease-in-out">
                     <Image className='rounded-xl' src={item} alt="Shoes" />

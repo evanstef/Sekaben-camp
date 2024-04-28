@@ -12,10 +12,10 @@ import image from '../../albumfoto/WhatsApp Image 2024-04-27 at 18.15.52_ff7d419
 import image2 from '../../albumfoto/WhatsApp Image 2024-04-28 at 09.26.34_dc732ba9.jpg'
 
 const page = () => {
-  const viewSatu : any = useRef()
-  const viewDua : any = useRef()
-  const viewOne = useInView(viewSatu, {margin:"-300px", once:true})
-  const viewTwo = useInView(viewDua, {margin:"-300px", once:true})
+  const satu : any = useRef()
+  const dua : any = useRef()
+  const viewOne = useInView(satu, {margin:"-300px", once:true})
+  const viewTwo = useInView(dua, {margin:"-300px", once:true})
 
 
   return (
@@ -36,7 +36,7 @@ const page = () => {
       
       <Wrapper>
 
-        <div ref={viewSatu} className='flex flex-col md:flex-row justify-between items-center gap-10 mb-8 md:my-28'>
+        <div ref={satu} className='flex flex-col md:flex-row justify-between items-center gap-10 mb-8 md:my-28'>
             <motion.div initial={{opacity: 0, y: -100}} animate={viewOne ? {opacity: 1, y: 0, transition : {duration : 0.7}} : {}} className='md:w-1/2'>
               <h1 className='text-sm md:text-xl lg:text-3xl font-bold'>Apa Aja Sih Barang Yang Disewakan</h1>
               <p className='text-xs md:text-sm lg:text-[16px]'>Buat temen - temen nih yang masih bingung sebenarnya barang apa aja sih yang kami sewakan, yang jelas kami menyewakan alat-alat camping seperti tenda,kursi lipat, nesting, hamook, dan alat camping lainnya, selain itu kami juga menyediakan tripod bluetooth dan juga gitar untuk temen-temen yang suka berfoto dan juga bermain musik jadi kalau ingin tau lebih lanjut silahkan klik tombol lihat semua produk di bawah.</p>
@@ -46,7 +46,7 @@ const page = () => {
             </motion.div>
         </div>
 
-        <div ref={viewDua} className='text-center mx-auto'>
+        <div ref={dua} className='text-center mx-auto'>
           <motion.h1 initial={{scale:0}} animate={viewTwo ? {scale: 1, transition : {duration : 0.4}} : {}} className='font-bold md:text-xl lg:text-3xl mb-4'>Jika Ingin tau lebih lanjut</motion.h1>
           <motion.div initial={{opacity: 0, y: 100}} animate={viewTwo ? {opacity: 1, y: 0, transition : {duration : 0.7}} : {}}>
             <Link className='mx-auto flex w-[300px] items-center hover:bg-lime-950 duration-300 justify-center gap-2 bg-hijau-kalem text-white px-4 py-2 rounded-lg' href={'/product/allproduct'}>

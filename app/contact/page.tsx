@@ -12,8 +12,8 @@ import image from '../../albumfoto/WhatsApp Image 2024-04-28 at 09.26.36_290c29d
 
 
 const page = () => {
-    const viewSatu : any = useRef()
-    const viewOne = useInView(viewSatu, {margin:"-300px", once:true})
+    const satu : any = useRef()
+    const viewOne = useInView(satu, {margin:"-300px", once:true})
   return (
     <>
         <div className='relative'>
@@ -30,7 +30,7 @@ const page = () => {
         </div>
         
         <Wrapper title='Contact Us'>
-            <div ref={viewSatu} className='flex flex-col md:flex-row justify-center items-center md:my-20'>
+            <div ref={satu} className='flex flex-col md:flex-row justify-center items-center md:my-20'>
                 <motion.div initial={{scale : 0}} animate={viewOne ? {scale : 1, transition : {duration : 0.3}} : {}} className='bg-hijau-kalem md:w-1/2 text-white rounded-t-xl md:rounded-l-xl md:rounded-tr-none p-5  space-y-8 h-[400px]'>
                     <div>
                        <Image className='w-[74px] md:w-24 lg:w-28' src={logo} alt='' />

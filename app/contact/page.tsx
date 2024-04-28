@@ -44,7 +44,7 @@ const Contact = () => {
                         </svg>
                         <div>
                             <p>Email</p>
-                            <p>sasjdajks@example.com</p>   
+                            <p>Sekabencamp313@gmail.com</p>   
                         </div> 
                     </div>
 
@@ -52,7 +52,7 @@ const Contact = () => {
                         <Image className='invert' src={phone} alt='' width={50} height={50}/>
                         <div>
                             <p>Phone</p>
-                            <p>01293019209</p>
+                            <p>+6281-2126-53247</p>
                         </div>
                     </div>
                 </motion.div>

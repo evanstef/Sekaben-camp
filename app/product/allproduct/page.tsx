@@ -28,9 +28,9 @@ const page = () => {
     }
 
     const view : any = useRef()
-    const view2 : any = useRef()
+    const viewDua : any = useRef()
     const viewOne = useInView(view, {margin:"-500px", once:true})
-    const viewTwo = useInView(view2, {margin:"-300px", once:true})
+    const viewTwo = useInView(viewDua, {margin:"-300px", once:true})
 
   return (
     <Wrapper>
@@ -43,7 +43,7 @@ const page = () => {
             ))}
         </Slider>
             <h1 className='text-center font-bold text-3xl my-10'>Detail Harga</h1>
-            <div ref={view2}>
+            <div ref={viewDua}>
               <motion.div initial={{scale:0}} animate={viewTwo ? {scale:1, transition : {duration : 0.3}} : {}}>
                 <Image className='w-[500px] rounded-xl mx-auto' src={detail} alt='' />
               </motion.div>

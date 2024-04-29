@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     ]
   },
   keywords : ["Sekaben Camp", "Sewa Alat Camping", "Pangkalpinang", "Bangka Belitung", "Wisata Alam", "Kemah", "Camping"],
-  robots : "index, follow"
+  robots : "index, follow",
 };
 
 export default function RootLayout({

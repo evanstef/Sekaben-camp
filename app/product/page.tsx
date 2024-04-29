@@ -46,7 +46,7 @@ const Product = () => {
             </motion.div>
         </div>
 
-        <div ref={dua} className='text-center mx-auto'>
+        <div ref={dua} className="text-center mx-auto">
           <motion.h1 initial={{scale:0}} animate={viewTwo ? {scale: 1, transition : {duration : 0.4}} : {}} className='font-bold md:text-xl lg:text-3xl mb-4'>Jika Ingin tau lebih lanjut</motion.h1>
           <motion.div initial={{opacity: 0, y: 100}} animate={viewTwo ? {opacity: 1, y: 0, transition : {duration : 0.7}} : {}}>
             <Link className='mx-auto flex w-[300px] items-center hover:bg-lime-950 duration-300 justify-center gap-2 bg-hijau-kalem text-white px-4 py-2 rounded-lg' href={'/product/allproduct'}>

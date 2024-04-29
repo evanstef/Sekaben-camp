@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
 import arrow from '../../public/icons8-chevron-right-48.png'
-import logo from '../../public/cropped-LOGO-SEKABEN-as-Smart-Object-1-120x120.png'
+import logo from '../../public/Logo.png'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import {motion} from 'framer-motion'

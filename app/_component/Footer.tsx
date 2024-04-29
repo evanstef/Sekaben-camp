@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import logo from '../../public/cropped-LOGO-SEKABEN-as-Smart-Object-1-120x120.png'
+import logo from '../../public/Logo.png'
 
 const Footer = () => {
     return (

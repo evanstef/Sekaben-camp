@@ -42,7 +42,7 @@ const Contact = () => {
                         <svg fill='white' xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 32 32">
                         <path d="M 6 7.03125 C 5.691406 7.03125 5.402344 7.089844 5.125 7.175781 L 8.039063 9.03125 L 23.960938 9.03125 L 26.875 7.175781 C 26.597656 7.089844 26.308594 7.03125 26 7.03125 Z M 4.113281 7.71875 C 3.4375 8.269531 3 9.097656 3 10.03125 L 3 23.03125 C 3 24.683594 4.347656 26.03125 6 26.03125 L 26 26.03125 C 27.652344 26.03125 29 24.683594 29 23.03125 L 29 10.03125 C 29 9.097656 28.5625 8.269531 27.886719 7.71875 L 16 15.28125 Z M 6 12.445313 L 16 18.8125 L 26 12.445313 L 26 24.03125 L 6 24.03125 Z"></path>
                         </svg>
-                        <div>
+                        <div className='text-sm md:text-[16px]'>
                             <p>Email</p>
                             <p>Sekabencamp313@gmail.com</p>   
                         </div> 
@@ -50,7 +50,7 @@ const Contact = () => {
 
                     <div className='font-bold flex items-center gap-5'>
                         <Image className='invert' src={phone} alt='' width={50} height={50}/>
-                        <div>
+                        <div className='text-sm md:text-[16px]'>
                             <p>Phone</p>
                             <p>+6281-2126-53247</p>
                         </div>

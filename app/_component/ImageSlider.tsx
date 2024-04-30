@@ -10,7 +10,7 @@ type Props = {
 const ImageSlider = ({children} : Props) => {
     const settings = {
         dots: true,
-        fade: true,
+        fade : true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,

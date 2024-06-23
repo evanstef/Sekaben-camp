@@ -24,7 +24,7 @@ const ProductPage = () => {
           <div>
             <Image className='w-full h-[230px] md:h-[500px] lg:h-[1000px]' src={image} alt="" />
             <div className="absolute top-0 w-full h-full bg-gradient-to-b from-black/40 via-black/50 to-black">
-              <motion.div initial={{opacity: 0, x: 100}} animate={{opacity: 1, x: 0, transition : {duration : 0.7}}} className='text-white mt-[150px] md:mt-[300px] lg:mt-[600px] container mx-auto px-7 md:px-0'>
+              <motion.div initial={{opacity: 0, x: 100}} animate={{opacity: 1, x: 0, transition : {duration : 0.7}}} className='text-white mt-[150px] md:mt-[300px] lg:mt-[600px] container mx-auto px-7'>
                 <h1 className='md:text-3xl font-bold'>Apa Aja Sih Barang Yang Disewakan</h1>
                 <h1 className='text-2xl md:text-5xl font-bold'>Dan Semua Produk Kami</h1>
               </motion.div>

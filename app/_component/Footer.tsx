@@ -6,7 +6,7 @@ import logo from '../../public/Logo.png'
 const Footer = () => {
     return (
         <div className='bg-hijau-kalem py-8 text-white mt-28'>
-            <div className='container mx-auto px-7 md:px-0'>
+            <div className='container mx-auto px-7'>
                 <div className='flex flex-col items-center md:items-start md:flex-row md:justify-between border-b-2 border-white pb-4'>
 
                     <div className='space-y-3 w-full md:w-1/2 mb-5 md:mb-0'>

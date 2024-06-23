@@ -22,7 +22,7 @@ const ContactPage = () => {
             <div>
               <Image className='w-full md:h-[400px] lg:h-[750px]' src={image} alt='' />
                 <div className="absolute top-0 w-full h-full bg-gradient-to-b from-black/40 via-black/50 to-black">
-                    <motion.div initial={{opacity: 0, y: -100}} animate={{opacity: 1, y: 0, transition : {duration : 0.7}}} className='text-white mt-[120px] md:mt-[300px] lg:mt-[500px] container mx-auto px-7 md:px-0'>
+                    <motion.div initial={{opacity: 0, y: -100}} animate={{opacity: 1, y: 0, transition : {duration : 0.7}}} className='text-white mt-[120px] md:mt-[300px] lg:mt-[500px] container mx-auto px-7'>
                         <h1 className='md:text-3xl lg:text-5xl font-bold'>Tinggalkan Pesan Dibawah jika ingin bertanya</h1>
                     </motion.div>
                 </div>     

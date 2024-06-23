@@ -44,7 +44,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`bg-cream-susu ${inter.className}`}>
+      <body className={`bg-cream-susu overflow-x-hidden ${inter.className}`}>
         <Navbar />
         {children}
         <Footer />

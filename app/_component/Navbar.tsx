@@ -7,6 +7,7 @@ import logo from '../../public/Logo.png'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import {motion} from 'framer-motion'
+import Wrapper from './Wrapper'
 
 const Navbar = () => {
 
@@ -27,16 +28,17 @@ const Navbar = () => {
   
   return (
     <div className='navbar bg-hijau-kalem'>
-      {/* Mode Mobile */}
-      
-      <div className='container mx-auto  justify-between items-center font-bold lg:text-xl text-slate-200 py-3'>
+  
+      <div className='container mx-auto px-7 justify-between items-center font-bold lg:text-xl text-slate-200 py-3'>
+
         {/* Hamburger Menu */}
           <div onClick={() => handleClick()} className='flex flex-col z-50 gap-2 items-center justify-center md:hidden'>
             <span className={`bg-slate-200 w-9 h-1 rounded-full duration-300 ease-in-out ${hamburger ? 'rotate-45 origin-top-left' : ''}`}></span>
             <span className={`bg-slate-200 w-9 h-1 rounded-full duration-300 ease-in-out ${hamburger ? 'scale-0' : ''}`}></span>
             <span className={`bg-slate-200 w-9 h-1 rounded-full duration-300 ease-in-out ${hamburger ? '-rotate-45 origin-bottom-left' : ''}`}></span>
           </div>
-        {/* Hamburger Menu */}
+        {/* Akhir Hamburger Menu */}
+
           <div className='hidden md:flex gap-7'>
             <Link className={`${pathName === '/' ? 'text-white' : ''} hover:text-white duration-200 ease-in-out`} href={"/"}>Company</Link>
               <Link className={`${pathName === '/about' ? 'text-white' : ''} hover:text-white duration-200 ease-in-out`}  href={"/about"}>About Us</Link>
